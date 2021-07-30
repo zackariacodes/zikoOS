@@ -1,86 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 body{
-  margin: 0px;
-  padding: 0px;
-  background-color: #19181D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #252839;
 }
 
-.circle{
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  background: linear-gradient(#313247 0%, #19181D 30%);
-
+h2{
+  position: relative;
+  font-size: 165px;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+  letter-spacing: 10px;
 }
 
-.circle:before{
-  content:'';
-  height: 400px;
-  width: 400px;
-  background: linear-gradient(#FFD1DA 0%,#FF849D 5%,#2D2133 25%);
-  border-radius: 50%;
-  position: absolute;
-  top: 43.8%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  filter:blur(7px);
-  -webkit-filter:blur(7px);
-  z-index: -1;
+h2::before{
+  content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    border-right: 2px solid #01fe87;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
 }
 
-.circle:after{
-  width: 415px;
-  top: 35px;
-  filter: blur(14px);
-  -webkit-filter: blur(14px);
-  opacity: .3;
-}
-
-.msg{
-  font-family: sans-serif;
-  font-size: 20px;
-  color: white;
-  letter-spacing: 45px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.notify{
-  font-family: sans-serif;
-  font-size: 12px;
-  color: #FFD1DA;
-  letter-spacing: 2px;
-}
-
-.field{
-
-}
-
-.field input{
-  height: 35px;
-  width: 300px;
-  background-color: #101113;
-  outline: none;
-  border: none;
-  border-radius: 35px;
-  font-family: sans-serif;
-  font-size: 10px;
-  color:white;
-  letter-spacing: 1px;
-  padding-left: 15px;
-}
-
-.field button{
-  height: 35px;
-  width: 100px;
-  background-color: #2E2D3B;
-  font-family: sans-serif;
-  font-size: 11px;
-  color: white;
-  letter-spacing: 1px;
-  border: none;
-  outline: none;
-  border-radius: 35px;
-  z-index: 999;
+@keyframes animate {
+  0%,10%,100%
+  {
+    width: 0;
+  }
+  70%,90%
+  {
+    width: 100%;
+  }
 }
 
 .container{
