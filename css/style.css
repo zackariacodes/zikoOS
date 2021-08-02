@@ -8,6 +8,7 @@
 :root{
   --text-color: #00aa00;
 }
+
 body{
   font-family: 'Roboto Mono', sans-serif;
   background-color: black;
@@ -16,11 +17,38 @@ body{
   line-height: 1.6;
 }
 
-h1{
-  color: var(--text-color);
+body{
+  padding: 10px;
+  background-color: #121212;  
+}
+
+/* container paragraphs */
+
+.container p {
+  border-right: solid 6px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Roboto Mono', sans-serif;  
   font-size: 50px;
+  color: var(--text-color);
+  margin: 0 auto;
   letter-spacing: -5px;
-  margin-bottom: 20px;
+  margin-bottom: 0 auto;
+}
+
+.container p {
+  animation: animated-text 2s steps(19,end) 1s 1 normal both,
+  animated-cursor 600ms steps(19,end) infinite;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 365px;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: var(--text-color);}
+  to{border-right-color: transparent;}
 }
 
 h2{
@@ -32,9 +60,7 @@ h3{
 }
 
 h5{
-  /* max-width: 600px; */
   margin: auto;
-  /* height: 90vh; */
   display: flex;
   color: grey;
   flex-direction: column;
