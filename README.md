@@ -1,8 +1,10 @@
 # websiteportfolio
 Welcome to my personal portfolio website
 <ul>
-  <li>JUL 25th: Bought my domain</li>
-  <li>JUL 31st: Worked on my 'Coming Soon' page</li>
-  <li>AUG 2nd: Deployed my 'Coming Soon' page</li>
+  <li>
+  <li>7/25/21: Bought my domain</li>
+  <li>7/31/21: Worked on my 'Coming Soon' page</li>
+  <li>8/02/21: Deployed my 'Coming Soon' page</li>
+  <li>5/15/22: Worked on my V1.0 of my website</li>
   <li>TBD: V1.0 launch of my website</li>
  <ul>
