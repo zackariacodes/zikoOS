@@ -1,43 +1,26 @@
-const about = document.querySelector('#about')
-const contact = document.querySelector('#contact')
-const aboutContent = document.querySelector('#about-content')
-const contactContent = document.querySelector('#contact-content')
+const dateInput = document.getElementById("date")
+const batteryLevel = document.getElementById("battery-level");
+const body = document.querySelector("body")
 
-about.addEventListener('click', () => {
-  const aboutBox = new WinBox({
-    title: 'About Me',
-    background: '#00aa00',
-    width: '500px',
-    height: '600px',
-    top: 50,
-    right: 90,
-    bottom: 50,
-    left: 50,
-    mount: aboutContent,
-    onfocus: function () {
-      this.setBackground('#00aa00')
-    },
-    onblur: function () {
-      this.setBackground('#777')
-    },
-  })
-})
+navigator.getBattery().then((battery) => {
+  const showBatteryLeve = () => {
+    let level = Math.floor(battery.level * 100);
+    batteryLevel.innerText = level;
+  };
 
-contact.addEventListener('click', () => {
-  const contactBox = new WinBox({
-    title: 'Contact Me',
-    width: '500px',
-    height: '350px',
-    top: 50,
-    right: 50,
-    bottom: 50,
-    left: 90,
-    mount: contactContent,
-    onfocus: function () {
-      this.setBackground('#00aa00')
-    },
-    onblur: function () {
-      this.setBackground('#777')
-    },
-  })
-})
+  showBatteryLeve();
+  battery.ondischargingtimechange = () => {
+    showBatteryLeve();
+  };
+
+  battery.onchargingtimechange = () => {
+    showBatteryLeve();
+  };
+});
+
+dateInput.innerText = moment().format("D MMM h:mm A");
+
+setInterval(() => {
+  //set date
+dateInput.innerText = moment().format("D MMM h:mm A");
+}, 1000*60 );
