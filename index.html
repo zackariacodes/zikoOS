@@ -3,31 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guest User | zackhitane.com</title>
+    <title>Guest User | ziko OS</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preload" as="image" href="./images/day.jpg">
+    <link rel="preload" as="image" href="../../media/night_bg.png">
     <link rel="shortcut icon" href="../../media/favicon.png" type="image/x-icon">
+    <meta http-equiv = "refresh" content = "2; url = html/main.html"/>
   </head>
   <body>
     <main>
       <nav>
         <div class="batteryContainer">
           <span id="battery-level">89</span>%
-          <img src="../../media/battery-icon.svg" alt="Battery icon" />
+          <img src="../../media/battery-icon.svg" alt="Battery icon"/>
         </div>
-        <img class="wifi" src="../../media/wifi.svg" alt="wifi icon" />
-
+        <img class="wifi" src="../../media/wifi.svg" alt="wifi icon"/>
         <div id="date">Thu 9 Apr 10:30 PM</div>
       </nav>
-      <div class="loginContainer">
-        <div class="pic"></div>
+      <div class="guestContainer">
+        <div class="profilepic"></div>
         <h3>Guest User</h3>
+        <div class="loader"></div>
+      </div>
     </main>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="js/main.js" type="module"></script>
-    <script type="text/javascript">
-      alert("Hello world! Sorry the website is currently undergoing some drastic maintenance right now. Please check back soon :) P.S i left this page up as a spoiler for what's coming. - Ziko");
-      </script>
+    <script src="scripts/start.js" type="module"></script>
   </body>
 </html>

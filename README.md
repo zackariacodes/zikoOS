@@ -1,10 +1,12 @@
-# websiteportfolio
-Welcome to my personal portfolio website
+# Presenting to you ziko OS
+Welcome to my personal portfolio website: ziko OS.
 <ul>
   <li>
   <li>7/25/21: Bought my domain</li>
   <li>7/31/21: Worked on my 'Coming Soon' page</li>
   <li>8/02/21: Deployed my 'Coming Soon' page</li>
-  <li>5/15/22: Worked on my V1.0 of my website</li>
+  <li>5/15/22: Worked on my V1.0 of my website almost a year later after battling sickness</li>
+  <li>5/16/22: Deployed a new 'Coming Soon' page</li>
+  <li>5/25/22: Finished the first version of my website</li>
   <li>TBD: V1.0 launch of my website</li>
  <ul>

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: SF;
+  src: url(../../Fonts/SF-UI-Display-Regular.otf);
+}
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: green;
+  background: url(../../media/day_bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

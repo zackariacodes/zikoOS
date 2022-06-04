@@ -1,0 +1,36 @@
+.navbar {
+  height: 35px;
+  padding: 0;
+  border-radius: 0px; 
+}
+
+.navbar a {
+  font-size: 12px;
+  height: 35px;
+}
+
+.navbar-text {
+  font-size: 12px;
+}
+
+.nav-item .batteryContainer img {
+  height: auto;
+  width: 20px;
+  margin-left: 3px;
+  margin-right: 1px;
+  transform: translateY(-1px);
+  cursor:not-allowed;
+}
+
+.nav-item .nav-link{
+  display: flex;
+
+}
+.nav-item .wifi{
+  transform: translateY(-1px);
+  width: 16px;
+  justify-content: space-between;
+  margin-right: 5px;
+  margin-left: -9px;
+  cursor:not-allowed;
+}

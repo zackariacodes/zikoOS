@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ziko OS</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to zackhitane.com</title>
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="../../css/main.css"/>
+    <link rel="stylesheet" href="../../css/navbar.css"/>
+    <link rel="stylesheet" href="../../css/dock.css"/>
+    <link rel="stylesheet" href="../../css/desktop.css"/>
+    <link rel="preload" as="image" href="../../media/day_bg.png"/>
+    <link rel="shortcut icon" href="../../media/navbarlogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../bootstrap 5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <!--Scripts-->
+    <script src="../../scripts/winbox.bundle.js"></script>
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/start.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/5b837dca9c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../../bootstrap 5/js/bootstrap.bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  style="margin-top: 3px;">
+                <i class="fa-solid fa-power-off"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">About ziko OS</a>
+                <a class="dropdown-item" href="#">Settings</a>
+                <a class="dropdown-item disabled" href="#">Log out</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                File</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item disabled" href="#">Open</a>
+                <a class="dropdown-item" href="#">Close Window</a>
+                <a class="dropdown-item disabled" href="#">Get info</a>
+                <a class="dropdown-item disabled" href="#">Move to trash</a>
+                <a class="dropdown-item disabled" href="#">Find</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Edit</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item disabled" href="#">Undo</a>
+                <a class="dropdown-item disabled" href="#">Redo</a>
+                <a class="dropdown-item disabled" href="#">Cut</a>
+                <a class="dropdown-item disabled" href="#">Copy</a>
+                <a class="dropdown-item disabled" href="#">Paste</a>
+                <a class="dropdown-item disabled" href="#">Select All</a>
+                <a class="dropdown-item disabled" href="#">Emojis & Symbols</a>
+            </div>
+            </li>
+            <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Help</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">ziko OS help</a>
+                <a class="dropdown-item disabled" href="#">Search</a>
+            </div>
+            </li>
+        </ul>
+        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                    <div class="batteryContainer">
+                        <span id="battery-level">89</span>%
+                        <img src="../../media/battery-icon.svg" alt="Battery icon"/>
+                    </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" style="justify-content: space-around; display: flex;">
+                    <img class="wifi" src="../../media/wifi.svg" alt="wifi icon"/>
+                    <div id="date">Thu 9 Apr 10:30 PM</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!--dockbar-->
+    <div class="dock">
+        <div class="dock-container">
+        <li class="li-1">
+            <div class="name">Preferences</div>
+            <a href="https://www.google.com/" target="_blank" ><img class="ico" src="../../media/dock_ico_settings.png" alt="settings"></a>
+        </li>
+        <li class="li-2">
+            <div class="name">Github</div>
+            <a href="https://github.com/zackxziko" target="_blank"><img class="ico" src="../../media/dock_ico_github.png" alt="github"></a>
+        </li>
+        <li class="li-3">
+            <div class="name">LinkedIn</div>
+            <a href="https://www.linkedin.com/in/zackhitane/" target="_blank"><img class="ico" src="../../media/dock_ico_linkedin.png" alt="linkedin"></a>
+        </li>
+        <li class="li-4">
+            <div class="name">Facebook</div>
+            <a href="https://www.facebook.com/zackariahitane/" target="_blank"><img class="ico" src="../../media/dock_ico_facebook.png" alt="facebook"></a>
+        </li>
+        <li class="li-5">
+            <div class="name">Instagram</div>
+            <a href="https://www.instagram.com/zackhitane/" target="_blank"><img class="ico" src="../../media/dock_ico_instagram.png" alt="instagram"></a>
+        </li>
+        <li class="li-6">
+            <div class="name">Stack Overflow</div>
+            <a href="https://stackoverflow.com/users/16010779/zackxziko" target="_blank"><img class="ico" src="../../media/dock_ico_stackoverflow.png" alt="stackoverflow"></a>
+        </li>
+        <li class="li-7">
+            <div class="name">Behance</div>
+            <a href="https://www.behance.net/zikohitane" target="_blank"><img class="ico" src="../../media/dock_ico_behance.png" alt="behance"></a>
+        </li>
+        </div>
+    </div>
+    <!--desktop-->
+    <div class="desktopContainer">
+        <div class="desktop-icon">
+            <div class="folder text-center" id="aboutme-folder">
+                <img src="../../media/desktop_ico_folder.png"
+                    class="" alt="aboutme-icon">
+                <p id="folder-name">About Me</p>
+            </div>
+            <div class="folder text-center" id="projects-folder">
+                <img src="../../media/desktop_ico_folder.png" class="" alt="projects-icon">
+                <p id="folder-name">Projects</p>
+            </div>
+            <div class="folder text-center" id="experiences-folder">
+                <img src="../../media/desktop_ico_folder.png" class="" alt="experiences-folder">
+                <p id="folder-name">Experiences</p>
+            </div>
+            <div class="folder text-center" id="travels-folder">
+                <img src="../../media/desktop_ico_folder.png" class="" alt="travels-folder">
+                <p id="folder-name">Travels</p>
+            </div>
+        </div>
+    </div>
+    <!--Winbox content-->
+    <div class="hidden">
+        <div id="aboutme-content" style="margin: 5px; overflow: hidden;">
+            <h2>Get to know Zackaria</h2>
+            <p>Zackaria Adam Hitane is currently an undergraduate student at American University in Washington D.C., majoring in Computer Science. Zackaria's interests range from software and app development, VR/AR/MR/XR, web and Ux/Ui design, videography and photography and finally social media management and marketing. Moving forward, Zackaria seeks to engage in a CS masters degree post graduate school in order to further prepare himself to follow through with pursuing a professional career in this field.
+
+                As someone who is constantly aiming to better engage himself in any given opportunity in any aspect belonging to this field of study, Zackaria is always looking forward to internship, certification and experience opportunities when possible. 
+                
+                I am always open to any sort of opportunities and experiences, feel free to connect with me.
+            </p>
+        </div>
+        <div id="projects-content" style="margin: 5px; overflow: hidden;">
+            <h2>My Projects</h2>
+            <p>Hello World! These are some of my most notable projects so far! <i>(as of May 25, 2022)</i></p>
+            <dl style="text-align: center;">
+                <dt>Web Design</dt>
+                    <dd></dd>
+                <dt>Programming</dt>
+                    <dd></dd>
+                <dt>UX/UI Design</dt>
+                    <dd></dd>
+                <dt>Photography</dt>
+                    <dd></dd>
+                <dt>3D Modeling</dt>
+                    <dd></dd>
+                <dt>Machine Learning</dt>
+                    <dd></dd>
+                <dt>Volunteer Work</dt>
+                    <dd></dd>
+            </dl>
+        </div>
+        <div id="experiences-content" style="margin: 5px; overflow: hidden;">
+            <h2>My Experiences</h2>
+            <p>For the past two years, I've been invested in gaining experience in various fields of interest for me. I look forward to continue doing so while I'm still in college
+                before settling down for a concentration for my graduate education and professional career.
+            </p>
+            <dl>
+                <dt>Head of IT & Marketing Department @ MASCC <i>(Feb '21 - Present)</i></dt>
+                    <dd>Devise and manage marketing strategies, including traditional and social media in addition to overseeing the planning, 
+                        management and operation of information systems for the Moroccan American Student Cultural Center.</dd>
+                <dt>Web Developer Apprenticeship @ Le Wagon <i>(Jun '21 - Aug '21)</i></dt>
+                    <dd>A web development course in Bali is an immersive experience that takes you from beginner to junior software developer in 9 weeks. At the end of the course, I learned how to build robust and user-friendly software that answers users' needs,
+                        and to follow the right workflow to collaborate with other developers, designers, and product managers.</dd>
+                <dt>UX Designer @Salam Softwork Studio <i>(Jan '21 - May '21)</i></dt>
+                    <dd>Working alongside project managers & software developers to ensure the best experience for our users. Was also in charge of managing this specific project's online digital media presence. 
+                        Hajji VR is a software that permits users to learn about the Hajj & Umra utilizing VR technologies.</dd>
+                <dt>Marketing Specialist Intern @Salam Softwork Studio <i>(Dec '20 - May '21)</i></dt>
+                    <dd>Responsible for planning, implementing, managing and overlooking the company's social media agenda in order to increase product awareness, audience and sales.Responsible for planning, implementing, managing and overlooking the company's social media agenda in order to increase product awareness, audience and sales.
+                    </dd>
+            </dl>
+        </div>
+        <div id="travels-content" style="margin: 5px; overflow: hidden;">
+            <h2>I love traveling! 🛫</h2>
+            <p>My earliest memory of traveling would be when my family was flying back to Morocco for good and lightning struck our plane's left wing. 
+            It was surreal, it made me think about how could such a thing survive lightning. Fifteen years later, I've been on over 30 planes visiting
+            ten countries. I plan on reach the 50 milestone by my late thirties. The main reasons I like to travel the world is because I always look
+            forward to meeting new people who later become friends, experiencing different cultures and traditions and visiting the wonders of the world.
+            Moving forward, the countries I plan on visiting soon are: Egypt, Senegal, Mexico, Colombia, Saudi Arabia, Iceland, Italy, Hungary, Greece, Israel/Palestine and the list goes on. </p>
+            <img src="../../media/winbox_travels_map.png" style="width: 100%; height: auto;"><br>
+            <br><ul><b><i>The countries that I have visited so far are:</i></b>
+            <li>United States 🇺🇸</li>
+            <li>Canada 🇨🇦</li>
+            <li>United Kingdom 🇬🇧</li>
+            <li>Belgium 🇧🇪</li>
+            <li>Netherlands 🇳🇱</li>
+            <li>Germany 🇩🇪</li>
+            <li>Spain 🇪🇸</li>
+            <li>Indonesia 🇮🇩</li>
+            <li>Morocco 🇲🇦</li>
+            </ul><br>
+            <p style="text-align: center;">Here are some of my favorite pictures from around the world</p>
+            <div class="row">
+            <div class="column">
+                <img src="../../media/winbox_travels_casablanca.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="../../media/winbox_travels_new york city.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="../../media/winbox_travels_bali.png" alt="Mountains" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <div id="dialog" title="ziko OS update msg">
+        <p>Hello World! <b>ziko OS</b> is currently undergoing some drastic changes throughout the summer <i>(May '22 - Aug '22)</i>. <br>
+        <p>Currently working on:</p>
+        <ul>
+            <li>Improved UI</li>
+            <li>Issues with JQuery</li>
+            <li>Issues with Winbox.js</li>
+            <li>Styling for content within folders</li>
+            <li>Mobile version <i>(coming soon)</i></li>
+        </ul>
+        <b>Current Version:</b> V1.01<br>
+        <b>Server Status:</b> <span style="color: green;"><b>live</b></span></p>
+    </div>
+    <!--Winbox script-->
+    <script src="../../scripts/desktop.js"></script>
+    <script>
+        $( function() {
+        $( "#dialog" ).dialog();
+        } );
+        </script>
+</body>
+</html>
