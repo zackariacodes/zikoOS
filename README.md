@@ -1,7 +1,6 @@
 # Presenting to you ziko OS
 Welcome to my personal portfolio website: ziko OS.
 <ul>
-  <li>
   <li>7/25/21: Bought my domain</li>
   <li>7/31/21: Worked on my 'Coming Soon' page</li>
   <li>8/02/21: Deployed my 'Coming Soon' page</li>
