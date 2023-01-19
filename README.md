@@ -8,4 +8,5 @@ Welcome to my personal portfolio website: ziko OS.
   <li>5/16/22: Deployed a new 'Coming Soon' page</li>
   <li>5/25/22: Finished the first version of my website</li>
   <li>6/03/22: V1.01 launch of my website</li>
+  <li>6/29/22: Shut down the website 4EVER :(</li>
  <ul>
