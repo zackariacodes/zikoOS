@@ -1,7 +1,7 @@
 # Presenting to you ziko OS
 Welcome to my personal portfolio website: ziko OS.
 <ul>
-  <li>7/25/21: Bought my domain</li>
+  <li>7/25/21: Bought my domain (www.zackhitane.com)</li>
   <li>7/31/21: Worked on my 'Coming Soon' page</li>
   <li>8/02/21: Deployed my 'Coming Soon' page</li>
   <li>5/15/22: Worked on my V1.0 of my website almost a year later after battling sickness</li>
